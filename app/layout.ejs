@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%- title %></title>
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style/all.css">
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="headerContent container">
+        <h1 class="logo">
+            <a href="index.html" alt="logo">SITE NAME</a>
+        </h1>
+        <nav>
+            <ul class="headerMenu fontStyle1">
+                <li class="headerMenu-item"><a href="#">系列鏡框</a></li>
+                <li class="headerMenu-item"><a href="#">門市據點</a></li>
+                <li class="headerMenu-item"><a href="#">部落格</a></li>
+                <li><a href="#">常見問題</a></li>
+            </ul>
+        </nav>
+    </div>
+  </header>
+
+  <%- contents %>
+
+  <footer class="footer">
+    <div class="footerContent container">
+        <div class="footerTop">
+            <ul class="footerMenu fontStyle2">
+                <li class="footerMenu-item"><a href="#">首頁</a></li>
+                <li class="footerMenu-item"><a href="#">系列鏡框</a></li>
+                <li class="footerMenu-item"><a href="#">門市據點</a></li>
+                <li class="footerMenu-item"><a href="#">部落格</a></li>
+                <li><a href="faq.html">常見問題</a></li>
+            </ul>
+            <ul class="footerSnslist">
+                <li><a class="footerSnslist-item" href="#"><img src="./assets/images/ic-social-fb.png"
+                            alt="footerSnslist-item"></a></li>
+                <li ><a class="footerSnslist-item" href="#"><img src="./assets/images/ic_social_ig.png"
+                            alt=""></a></li>
+                <li><a href="#"><img src="./assets/images/ic_social_line.png"
+                            alt=""></a></li>
+            </ul>
+        </div>
+        <div class="footerMiddle fontStyle3">
+            <div class="phone-content">
+                <h2>
+                    <a href="tel:0800000000">
+                        <span class="material-icons-outlined fontWhite">call</span><span>0800-000-000</span>
+                    </a>
+                </h2>
+                <ul class="footerSnslist-small">
+                    <li><a href="#"><img class="footerSnslist-item-s" src="./assets/images/ic-social-fb.png"
+                                alt=""></a></li>
+                    <li><a href="#"><img class="footerSnslist-item-s" src="./assets/images/ic_social_ig.png"
+                                alt=""></a></li>
+                    <li><a href="#"><img src="./assets/images/ic_social_line.png"
+                                alt=""></a></li>
+                </ul>
+            </div>
+            <h2>
+                <a href="mailto:glasses@business.com">
+                    <span class="material-icons-outlined fontWhite">email</span><span>glasses@business.com</span>
+                </a>
+            </h2>
+        </div>
+        <div class="footorBottom">
+            <p class="footorBottom-left fontStyle2">Copyright © 2020 Glasses.All rights reserved.</p>
+            <ul class="footorBottom-right fontStyle4">
+                <li class="privacy"><a href="#">隱私權政策</a></li>
+                <li><a href="#">服務條款</a></li>
+            </ul>
+        </div>
+    </div>    
+</footer>
+</body>
+
+</html>

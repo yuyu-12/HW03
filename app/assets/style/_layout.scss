@@ -1,0 +1,163 @@
+.header {
+    background-color: $bgcolor;
+    padding: $spacer*2 0;
+    .headerContent{
+        @include space-between;
+
+        .logo{
+            width: 80px;
+            height: 49px;
+            background: url('../images/logo-white.png') no-repeat center center;
+            background-size: contain;
+            /* 文字縮排至原本的區域外 */
+            text-indent: 100%;
+            /*超出範圍不換行*/
+            white-space: nowrap;
+            /*隱藏超出範圍的文字*/
+            overflow: hidden;
+
+            a{
+                @include link-range;
+            }
+        }
+        .headerMenu{
+            @include space-between;
+            .headerMenu-item{
+                padding-right: $spacer*8;
+            }
+        }
+    }
+    @include phone(){
+        padding: 0;
+        h1{
+            margin: $spacer*2 auto;
+        }
+        .headerContent{
+            padding: 0;
+            @include direction-column;
+            .headerMenu{
+                width: 100%;
+                @include flex-wrap;
+                .headerMenu-item{
+                    padding: 0;
+                }
+                li{
+                    width: 50%;
+                    border: 1px solid #FFF;
+                    text-align: center;
+                    a{
+                        display: block;
+                        font-size: 16px;
+                        line-height: 24px;
+                        padding: $spacer+4px 0;
+                    }
+                }
+            }
+
+        }
+    }
+  }
+  
+  .footer {
+    background-color: $bgcolor;
+    padding-top: $spacer*6;
+
+    .footerTop{
+        @include space-between;
+        @include align-center;
+        a{
+            @include link-range;
+        }
+        .footerMenu{
+            @include flex;
+            .footerMenu-item{
+                padding-right: $spacer*6;
+            }
+        }
+        .footerSnslist{
+            @include flex;
+            img{
+                width: 48px;
+                @include pad(){
+                    width: 40px;
+                }
+            }
+            .footerSnslist-item{
+                padding-right: $spacer*4;
+            }
+        }
+    }
+
+    .footerMiddle{
+        margin: $spacer*3 0;
+        .footerSnslist-small{
+            display: none;
+            .footerSnslist-item-s{
+                margin-right: $spacer;
+            }
+        }
+        span{
+            font-size: 40px;
+            margin-right: 20px;
+            vertical-align: middle;
+        }
+    }
+
+    .footorBottom{
+        @include space-between;
+        padding: $spacer*4 0;
+        border-top: 1px solid #FFF;
+        .footorBottom-right{
+            @include flex;
+            .privacy{
+                padding-right: $spacer*6;
+            }
+        }
+    }
+    @include phone(){
+        padding: 0;
+        .footerTop{
+            display: none;
+        }
+        .footerMiddle{
+            font-size: 16px;
+            line-height: 24px;
+            margin: 0;
+            padding: $spacer*3 0;
+            li{
+                margin: 0;
+            }
+            span{
+                font-size: 20px;
+                margin-right: $spacer+2px;
+            }
+            .phone-content{
+                @include space-between;
+                .footer-snslink-small{
+                    @include flex;
+                    .footerSnslist-item-s{
+                        width: 24px;
+                    }
+                }
+            }
+
+        }
+        .footorBottom{
+            padding: $spacer*3 0;
+            @include direction-column;
+            .footorBottom-right{
+                @include direction-column;
+                .privacy{
+                    margin-bottom: $spacer;
+                }
+            }
+            .footorBottom-left{
+                margin-bottom: $spacer;
+            }
+        }
+    }
+  }
+
+
+
+

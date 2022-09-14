@@ -1,0 +1,27 @@
+@mixin flex {
+    display: flex;
+}
+@mixin flex-wrap {
+    flex-wrap: wrap;
+}
+@mixin space-between{
+    display: flex;
+    justify-content: space-between;
+}
+@mixin align-center{
+    display: flex;
+    align-items: center;
+}
+@mixin direction-column{
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin link-range{
+   /* a為行內元素，無法指定長寬故設block; */
+    display: block; 
+   /* 使連結範圍與圖片一致 */
+    width: 100%;
+    height: 100%;
+}
+
